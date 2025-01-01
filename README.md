@@ -1,2 +1,3 @@
 # My_Website
-A personal website about me
+
+A personal website serving as a C.V.
