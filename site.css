@@ -1,0 +1,16 @@
+#compsci, #teaching {
+    margin-bottom: 20px;
+}
+
+#flex-align {
+    display: flex;
+    justify-content: space-between;
+}
+
+#zoo p, #compsci p, #teaching p, #retail p {
+    margin: 0;
+}
+
+#contact #flex-align {
+    justify-content: space-evenly;
+}
