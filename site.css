@@ -4,7 +4,7 @@ body {
     width: 90%;
     margin: auto;
     color: white;
-    font-size: 24px;
+    font-size: 26px;
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -18,12 +18,62 @@ h2 {
 /* ------- Styles for the grid relating to projects and skills -------*/
 .section-grid {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 80px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
+
+/* ------- Styles related to the slideshow ------ */
+#slideshow-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.slideshow-pane {
+    display: none;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+.slideshow-pane ul, .slideshow-pane h3 {
+    color: green;
+    font-size: 40px;
+    text-align: center;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    user-select: none;              /* disables double click selecting */
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(230, 19, 89, 0.918);
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
 
 
