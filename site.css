@@ -32,10 +32,11 @@ h2 {
     position: relative;
 }
 
+/* for each panel fo the slideshow */
 .slideshow-pane {
     display: none;
     padding: 20px;
-    border: 1px solid white;
+    border: 1px solid white;    /* temp addition to help with spacing etc */
 }
 
 .slideshow-pane ul, .slideshow-pane h3 {
@@ -44,6 +45,7 @@ h2 {
     text-align: center;
 }
 
+/* the buttons used to scroll through the slideshow */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -56,6 +58,7 @@ h2 {
     user-select: none;              /* disables double click selecting */
 }
 
+/* put the right/next arrow all the way to the right of the parent container */
 .next {
     right: 0;
 }
@@ -63,17 +66,6 @@ h2 {
 .prev:hover, .next:hover {
     background-color: rgba(230, 19, 89, 0.918);
 }
-
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
 
 
 

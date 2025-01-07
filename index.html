@@ -11,6 +11,8 @@
     
     <body>
         <div id="main-container">
+            
+            <!-- section with about me info -->
             <div class="section about">
                 <div id = "about-me">
                     <h2> A Bit About Me</h2>
@@ -26,6 +28,7 @@
 
             <div class="section info">
 
+                <!-- section for past education at Uni -->
                 <div id = "education">
                     <h2>Education</h2>
                     
@@ -51,15 +54,18 @@
                     </div>
                 </div>
 
+                <!-- section highlighting some projects I have done, Used JS to make a slideshow -->
                 <div class="section-grid">
                     <div id = "projects">
                         
+                        <!-- JS to display the first slideshow item when the page has loaded -->
                         <script>
                             document.addEventListener('DOMContentLoaded', function() {
                                 showSlides(0);
                             })
                         </script>
 
+                        <!-- slideshow content, has one slide for each project. Gives some details on what the project is, and some stuff I learnt from it -->
                         <div id="slideshow-container">
                             <h2>Projects</h2>
 
@@ -93,11 +99,10 @@
                             <!-- next/prev buttons for the slideshow -->
                             <a class="prev" onclick="changeSlides(-1)"> &#10094 </a>
                             <a class="next" onclick="changeSlides(1)"> &#10095 </a>
-                            
-                        
                         </div>
                     </div>
 
+                    <!-- list of the langauges/frameworks and soft skills -->
                     <div id = "skills">
                         <h2>Languages & Frameworks</h2>
                         <ul>
@@ -119,9 +124,9 @@
                             <li>Detail Oriented</li>
                         </ul>
                     </div>
-
                 </div>
 
+                <!-- Past work experiences -->
                 <div id = "work">
                     <h2>Work History</h2>
 
@@ -143,9 +148,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
+            <!-- Footer section with different links to contact me -->
             <footer>
                 <div class="section contact">
                     <div id = "contact">
