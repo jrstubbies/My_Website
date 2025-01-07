@@ -98,13 +98,12 @@ a {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    width: 80%;
 }
 
 #flex-align {
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    width: 50%;
     flex-wrap: wrap;
 }
 
