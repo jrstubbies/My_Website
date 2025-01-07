@@ -24,13 +24,14 @@
             </div>
 
             <div class="section info">
+
                 <div id = "education">
                     <h2>Education</h2>
                     
                     <div id = "compsci">
                         <div id = "flex-align">
                             <p>Bachelor of Science, Major in Computer Science</p>
-                            <p><em>A - A+</em></p>
+                            <p><em>A/A+</em></p>
                         </div>
                         <div id="flex-align">    
                             <p>Massey Univeristy, Auckland</p>
@@ -49,58 +50,68 @@
                     </div>
                 </div>
 
-                <div id = "skills">
-                    <h2>Languages & Frameworks</h2>
-                    <ul>
-                        <li>HTML, CSS, JavaScript</li>
-                        <li>Python, C++, ASP.NET Core</li>
-                        <li>SQL, MongoDB</li>
-                        <li>JSON</li>
-                        <li>Git</li>
-                    </ul>
+                <div class="section-grid">
+                    <div id = "projects">
+                        <div id="slideshow-container">
+                            <h2>Projects</h2>
 
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>Problem Solving</li>
-                        <li>Excellent Communication</li>
-                        <li>Teamwork and Collaboration</li>
-                        <li>Time Management</li>
-                        <li>Work Ethic</li>
-                        <li>Detail Oriented</li>
-                    </ul>
-                </div>
+                            <div class="slidshow pane">
+                                <h3><em>RSA-CBC Encryption</em></h3>
+                                <ul>
+                                    <li>C++ program using asymmetric encryption to encrypt and decrypt messages between TCP server and client</li>
+                                    <li>Focus on key asymmetric key generation using Euclidean, Extended Euclidean, and Repeat Squares algorithms</li>
+                                    <li>Helped develop understanding for TCP, data transmission, encryption algorithms, problem-solving, and attention to detail</li>
+                                </ul> 
+                            </div>
+        
+                            <div class="slidshow pane">    
+                                <h3><em>Buddy Memory Management System</em></h3>
+                                <ul>
+                                    <li>C++ program using self-implemented version of C Standard Library's 'malloc()' and 'free()'</li>
+                                    <li>Focus on pointers to split and join smaller memory blocks from a larger contiguous memory block using doubly linked-lists</li>
+                                    <li>Helped develop low-level memory operations, pointer and poiinter arithmetic, problem solving, attention to detail</li>
+                                </ul>
+                            </div>
 
-                <div id = "projects">
-                    <h2>Projects</h2>
-
-                    <ol>
-                        <li>
-                            <h3><em>RSA-CBC Encryption</em></h3>
-                            <ul>
-                                <li>C++ program using asymmetric encryption to encrypt and decrypt messages between TCP server and client</li>
-                                <li>Focus on key asymmetric key generation using Euclidean, Extended Euclidean, and Repeat Squares algorithms</li>
-                                <li>Helped develop understanding for TCP, data transmission, encryption algorithms, problem-solving, and attention to detail</li>
-                            </ul>   
-                        </li>
+                            <div class="slidshow pane">
+                                <h3><em>Simple Parser/Interpreter</em></h3>
+                                <ul>
+                                    <li>A Python program to parse and interpret a simple string-processing language</li>
+                                    <li>Focus on string input manipulation, regex, and command execution</li>
+                                    <li>Helped develop input handling, regex, error handling, understanding the parsing/interpreting process</li>
+                                </ul>
+                            </div>
                         
-                        <li>
-                            <h3><em>Buddy Memory Management System</em></h3>
-                            <ul>
-                                <li>C++ program using self-implemented version of C Standard Library's 'malloc()' and 'free()'</li>
-                                <li>Focus on pointers to split and join smaller memory blocks from a larger contiguous memory block using doubly linked-lists</li>
-                                <li>Helped develop low-level memory operations, pointer and poiinter arithmetic, problem solving, attention to detail</li>
-                            </ul>
-                        </li>
+                            <!-- next/prev buttons for the slideshow -->
+                            <a class="prev" onclick="changeSlides(-1)"> &#10094 </a>
+                            <a class="next" onclick="changeSlides(1)"> &#10095 </a>
+                        
+                        
+                        </div>
+                    </div>
 
-                        <li>
-                            <h3><em>Simple Parser/Interpreter</em></h3>
-                            <ul>
-                                <li>A Python program to parse and interpret a simple string-processing language</li>
-                                <li>Focus on string input manipulation, regex, and command execution</li>
-                                <li>Helped develop input handling, regex, error handling, understanding the parsing/interpreting process</li>
-                            </ul>
-                        </li>
-                    </ol>
+                    <div id = "skills">
+                        <h2>Languages & Frameworks</h2>
+                        <ul>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>Python, C++, ASP.NET Core</li>
+                            <li>SQL, MongoDB</li>
+                            <li>JSON</li>
+                            <li>Git</li>
+                            <li>Django</li>
+                        </ul>
+
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>Problem Solving</li>
+                            <li>Excellent Communication</li>
+                            <li>Teamwork and Collaboration</li>
+                            <li>Time Management</li>
+                            <li>Work Ethic</li>
+                            <li>Detail Oriented</li>
+                        </ul>
+                    </div>
+
                 </div>
 
                 <div id = "work">
@@ -124,6 +135,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <footer>
