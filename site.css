@@ -36,7 +36,7 @@ h2 {
 .slideshow-pane {
     display: none;
     padding: 20px;
-    border: 1px solid white;    /* temp addition to help with spacing etc */
+    /*border: 1px solid white; */    /* temp addition to help with spacing etc */
 }
 
 .slideshow-pane ul, .slideshow-pane h3 {
