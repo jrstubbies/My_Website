@@ -1,3 +1,4 @@
+/* ------ Global styles ------- */
 body {
     background-color: black;
     width: 90%;
@@ -11,9 +12,25 @@ h2 {
     text-decoration: underline;
 }
 
+
+
+
+/* ------- Styles for the grid relating to projects and skills -------*/
+.section-grid {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+/* ------ Styles related to the 3 main section - about, info, contact -------- */
 .section {
     border-radius: 30px;
-    padding: 35px;
+    padding: 55px;
     margin: 10px;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -23,9 +40,12 @@ h2 {
 
 .section:hover {
     scale: 102%;
-    padding: 30px;
 }
 
+
+
+
+/* ------ Styles relating to specific parts  ------ */
 #compsci, #teaching {
     margin-bottom: 20px;
 }
@@ -33,12 +53,21 @@ h2 {
 #flex-align {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #zoo p, #compsci p, #teaching p, #retail p {
     margin: 0;
 }
 
+#skills ul:first-of-type {
+    margin-bottom: 100px;
+}
+
+
+
+
+/* ------ Styles related to the contact me section -------*/
 #contact #flex-align {
     justify-content: space-evenly;
 }
