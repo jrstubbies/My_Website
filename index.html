@@ -5,6 +5,7 @@
         <meta name = "viewport" content = "width =device-width, initial-scale=1.0">
         <title>Myles' CV</title>
         <link rel="stylesheet" href="site.css">
+        <script src="sitejs.js"></script>
     </head>
     
     
@@ -52,19 +53,26 @@
 
                 <div class="section-grid">
                     <div id = "projects">
+                        
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                showSlides(0);
+                            })
+                        </script>
+
                         <div id="slideshow-container">
                             <h2>Projects</h2>
 
-                            <div class="slidshow pane">
+                            <div class="slideshow-pane">
                                 <h3><em>RSA-CBC Encryption</em></h3>
                                 <ul>
                                     <li>C++ program using asymmetric encryption to encrypt and decrypt messages between TCP server and client</li>
-                                    <li>Focus on key asymmetric key generation using Euclidean, Extended Euclidean, and Repeat Squares algorithms</li>
+                                    <li>Focus on asymmetric key generation using Euclidean, Extended Euclidean, and Repeat Squares algorithms</li>
                                     <li>Helped develop understanding for TCP, data transmission, encryption algorithms, problem-solving, and attention to detail</li>
                                 </ul> 
                             </div>
         
-                            <div class="slidshow pane">    
+                            <div class="slideshow-pane">    
                                 <h3><em>Buddy Memory Management System</em></h3>
                                 <ul>
                                     <li>C++ program using self-implemented version of C Standard Library's 'malloc()' and 'free()'</li>
@@ -73,7 +81,7 @@
                                 </ul>
                             </div>
 
-                            <div class="slidshow pane">
+                            <div class="slideshow-pane">
                                 <h3><em>Simple Parser/Interpreter</em></h3>
                                 <ul>
                                     <li>A Python program to parse and interpret a simple string-processing language</li>
@@ -85,7 +93,7 @@
                             <!-- next/prev buttons for the slideshow -->
                             <a class="prev" onclick="changeSlides(-1)"> &#10094 </a>
                             <a class="next" onclick="changeSlides(1)"> &#10095 </a>
-                        
+                            
                         
                         </div>
                     </div>
