@@ -1,7 +1,7 @@
 /* ------ Global styles ------- */
 body {
     background-color: black;
-    width: 90%;
+    width: 80%;
     margin: auto;
     color: white;
     font-size: 26px;
@@ -12,6 +12,9 @@ h2 {
     text-decoration: underline;
 }
 
+a {
+    color: green;
+}
 
 
 
@@ -40,7 +43,7 @@ h2 {
 }
 
 .slideshow-pane ul, .slideshow-pane h3 {
-    color: green;
+    color: blue;
     font-size: 40px;
     text-align: center;
 }
@@ -54,7 +57,6 @@ h2 {
     color: white;
     font-weight: bold;
     font-size: 50px;
-    transition: 0.6s ease;
     user-select: none;              /* disables double click selecting */
 }
 
@@ -67,6 +69,10 @@ h2 {
     background-color: rgba(230, 19, 89, 0.918);
 }
 
+.slideshow-pane a:hover {
+    color: lightgoldenrodyellow;
+    font-size: 50px;
+}
 
 
 /* ------ Styles related to the 3 main section - about, info, contact -------- */
@@ -88,15 +94,20 @@ h2 {
 
 
 /* ------ Styles relating to specific parts  ------ */
-#compsci, #teaching {
+#compsci, #zoo, #retail, #teaching {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
+    width: 80%;
 }
 
 #flex-align {
     display: flex;
     justify-content: space-between;
+    width: 40%;
     flex-wrap: wrap;
 }
+
 
 #zoo p, #compsci p, #teaching p, #retail p {
     margin: 0;
@@ -114,15 +125,11 @@ h2 {
     justify-content: space-evenly;
 }
 
-#contact a {
-    color: green;
+#contact p {
+    font-size: 30px;
 }
 
 #contact a:hover {
     color: lightgoldenrodyellow;
-    font-size: 35px;
-}
-
-#contact p {
-    font-size: 30px;
+    font-size: 40px;
 }
